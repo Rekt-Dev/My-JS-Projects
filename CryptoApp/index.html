@@ -1,0 +1,194 @@
+<html>
+    <head>
+<title> Sandbox of Ofears JScryptoApp </title>
+
+    </head>
+    <body>
+	
+	<meta http-equiv="refresh" content="900"/>
+
+         <h1  style=color:blue;> Welcome 2 Ofears JScryptoApp </h1>
+
+<div id='current-btc-price' style='font-weight:  bold; font-size: 28px; color : green ; ">
+;'></div>
+
+<div id="current-btc-marketcap" style='font-weight: bold; font-size: 28px; color:orange;'></div>
+
+<div id="chart"></div>
+
+
+<div id="alternativeME" style='font-weight: bold; font-size: 28px; color:red;'></div>
+
+
+
+<div id="toilet" style='font-weight: bold; font-size: 28px; color:black;'></div>
+
+<div id='xhr' style='font-weight:  bold; font-size: 28px; color : white ; ">
+;'></div>
+</p>
+
+<p> 	<img src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" width = '500' height = "400" align='middle' />
+</p>
+<script type="text/javascript">
+
+
+
+
+
+
+const lastTenFear =fetch ("https://api.alternative.me/fng/?limit=0")
+
+
+
+        document.getElementById("toilet").innerHTML =
+            lastTenFear + " " + toilet ;
+
+
+const alternativeMe = fetch ('https://api.alternative.me/fng/?limit=0')
+console.log(` lel bro stfu ffs + ${alternativeMe}`)
+window
+.fetch ("https://api.alternative.me/fng/?limit=10")
+.then (res=> res.json())
+//const resJson = res.json()
+//console.log(res.Json)
+.then(payload=>
+  (document.getElementById("alternativeME").innerHTML =
+alternativeMe));
+
+
+// assuming you have a <div id='current-btc-price' style='font-weight: bold; font-size: 18px;'></div>
+window
+    .fetch("https://data.messari.io/api/v1/assets/btc/metrics/market-data")
+    .then(res => res.json())
+    .then(messariRes => messariRes.data)
+    .then(
+        payload =>
+        (document.getElementById("current-btc-price").innerHTML =
+           `We made it son ` + payload.market_data.price_usd.toLocaleString())
+    );
+//Write current reported marketcap to a HTML div
+// assuming you have a <div id='current-btc-marketcap' style='font-weight: bold; font-size: 18px;'></div>
+window
+    .fetch("https://data.messari.io/api/v1/assets/btc/metrics")
+    .then(res => res.json())
+    .then(messariRes => messariRes.data)
+    .then(
+        payload =>
+        (document.getElementById("current-btc-marketcap").innerHTML =
+            'BTC\'s Marketcap   $ '+ payload.marketcap.current_marketcap_usd.toLocaleString())
+    );
+	
+			window
+			.fetch("https://coingecko.p.rapidapi.com/simple/price?ids=%3CREQUIRED%3E&vs_currencies=%3CREQUIRED%3E", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "coingecko.p.rapidapi.com",
+		"x-rapidapi-key": "ae892c4004msh44f9eb6e9b4441cp13282cjsn9e8bfa4b5636"
+	}
+})
+.then(response => {
+	console.log("responso " + response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+const data = null;
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = false;
+xhr.addEventListener("readystatechange", function () {
+console.log("mofo"+readystatechange)
+  if (this.readyState === this.DONE) {
+    console.log("wut " + this.responseText);
+	
+  }
+});
+xhr.open("GET", "https://coingecko.p.rapidapi.com/coins/list");
+xhr.setRequestHeader("x-rapidapi-key", "insert-api-key-here");
+xhr.setRequestHeader("x-rapidapi-host", "coingecko.p.rapidapi.com");
+xhr.send(data);
+
+fetch("https://coingecko.p.rapidapi.com/simple/price?ids=%3CREQUIRED%3E&vs_currencies=%3CREQUIRED%3E", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "coingecko.p.rapidapi.com",
+		"x-rapidapi-key": "ae892c4004msh44f9eb6e9b4441cp13282cjsn9e8bfa4b5636"
+	}
+})
+.then(response => {
+	console.log("lel" + response);
+})
+.catch(err => {
+	console.error("this is err " + err);
+});
+
+
+var url = "https://api.coingecko.com/api/v3/coins/btc?tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false";
+
+xhr.open("GET", url);
+
+xhr.setRequestHeader("accept", "application/json");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log("1 b4 newest responso  "+xhr.status);
+      console.log("newest responso  " + xhr.responseText);
+	  
+	  const xhrResponseText = xhr.responseText
+console.log("wuuuuuuuut " +xhrResponseText[2]+xhrResponseText[3])	  
+	  document.getElementById("xhr").innerHTML= xhrResponseText[7-15]}};
+
+xhr.send();
+
+
+var qs = require("querystring");
+var http = require("https");
+
+var options = {
+    "method": "{{HTTP_METHOD}}",
+    "hostname": "{{API_URL}}",
+    "path": "{{API_PATH}}",
+    "headers": {
+        "x-rapidapi-key": "{{API_KEY}}",
+    }
+};
+
+var req = http.request(options, function (res) {
+    var chunks = [];
+
+    res.on("data", function (chunk) {
+        chunks.push(chunk);
+    });
+
+    res.on("end", function () {
+        var body = Buffer.concat(chunks);
+        console.log("MOTHERFUCKER "+body.toString());
+    });
+
+    console.log(body)
+});
+
+req.write(qs.stringify({}));
+req.end();
+</script>
+   
+
+<style>
+
+  body{
+        width: 540px;
+        height: 180px;        
+        background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'") no-repeat;
+        background-size: cover;
+        border: 20px solid #333;
+        margin: 20px;
+		
+		}
+		
+
+
+</style>
+   </body>
+</html>
+
+

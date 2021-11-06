@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> looping thru js obj </title>
+<body>
+<ul id = "social" </ul>
+
+<script>
+
+let data = {
+
+    name : "Ofir Maoz",
+    title : "JS noob",
+    courses: [
+
+        {php:"http:cnn.com"},
+        {js:"http:ttt.com"},
+    
+        {csharp:"http:abc.com"}
+        ]
+
+    };
+
+    let output = ""
+
+    for (i=0; i <= data.courses.length; i++ ) 
+    
+        {
+                for (key in data.courses[i]){
+
+                        
+output +='<li>'+
+'<a href="' +data.courses[i][key] + '">' + key + '<a>' + '</li>';
+console.log(output)
+
+        }
+
+    } 
+
+    let update = document.getElementById(`social`);
+    console.log(update)
+
+update.innerHTML=output;
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+
+ <style> 
+
+        ul
+        { color:yellow
+
+        } 
+
+        href {
+
+            color:yellow
+
+        }
+
+ </style>

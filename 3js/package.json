@@ -1,0 +1,21 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "amdefine": "^1.0.1",
+    "bluebird": "^3.7.2",
+    "mongodb": "^4.1.3",
+    "nedb": "^1.8.0",
+    "request": "^2.88.2",
+    "unirest": "^0.6.0"
+  },
+  "name": "3js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

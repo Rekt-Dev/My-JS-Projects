@@ -1,0 +1,15 @@
+{
+  "name": "cryptoapp",
+  "version": "1.6.9",
+  "description": "toilet",
+  "main": "messari.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ofear",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.2",
+    "i": "^0.3.7"
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Fear and Greed Index",
+	"data": [
+		{
+			"value": "78",
+			"value_classification": "Extreme Greed",
+			"timestamp": "1634342400",
+			"time_until_update": "21324"
+		}
+	],
+	"metadata": {
+		"error": null
+	}
+}

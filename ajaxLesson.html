@@ -1,0 +1,87 @@
+<html>
+<head>
+
+
+ <title> Learninig AJAX </title>
+</head>
+<body>
+
+<h1> 
+This is our AJAX lesson .
+
+<h1>
+
+<p id=paragraph >
+ 
+
+</p>
+
+
+
+<button id=btn> 
+
+fetch info for 3 animals.
+ </button>
+
+ <p id = 'bleh'> <p>
+<div id = "animal-info"> </div>
+<button id = button1> </button>
+
+
+<script>
+
+    let animalContainer = document.getElementById('bleh') ;
+    let paragraph = document.getElementById("paragraph") ;
+var animalBtn = document.getElementById('btn');
+animalBtn.addEventListener('click', function(){
+
+        let ourRequest = new XMLHttpRequest();
+let pageNum=1;
+ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-'+pageNum+'.json')
+  ourRequest.onload= function(){
+
+        let ourData=JSON.parse(ourRequest.responseText)
+        renderHTML(ourData)
+        console.log(ourData)
+
+
+  } ;
+  ourRequest.send();
+
+})
+function renderHTML(data){
+   bleh.insertAdjacentHTML('beforeend','test12345')
+};
+
+
+console.log(bleh)
+
+
+</script>
+
+
+
+<style>
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+h1{
+
+    color: blue; font-size:50px;
+}
+
+
+.button{
+
+    color:black,
+     padding: 15px 32px;
+}
+
+</style>
+</body>
+
+
+</html>
