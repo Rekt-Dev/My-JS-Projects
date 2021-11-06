@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+
+<div class="form">
+<center><h3> Ajax Example </h3> </center>
+<hr />
+<input type = "text" id="name" placeholder="Enter_name"/>
+<br />
+<input type = "text" id = 'name' placeholder = "Enter_contact"/> 
+<input type = "button" value = "Submit" onclick="Send_Data()" /> 
+
+<span id="response">
+
+</span>
+</div>
+
+
+
+<script>
+
+function Send_Data(){
+
+    let name = document.getElementById("name").value;
+     let cont = document.getElementById("cont").value;
+     let httpr=new XMLHttpRequest();
+     httpr.open("POST", "./AfknReadStream.txt", true) 
+     httpr.setRequestHeader("Content-type", application/x-www-form-url);
+     httpr.onreadystatechange=function(){
+
+         if(httpr.readyState==4 && httpr.status==200){
+
+
+             document.getElementById("response").innerHTML=httpr.responseText;
+
+         }
+
+     }
+
+
+httpr.send("name"+name+"&cont="+cont);
+
+
+}
+
+</script>
+
+<style>  </style>
+</body>
+</html>
