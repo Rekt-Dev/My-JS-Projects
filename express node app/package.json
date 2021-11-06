@@ -1,0 +1,25 @@
+{
+  "name": "w8wut",
+  "version": "69.69.69",
+  "description": "lickMyAsshole",
+  "main": "const userObject.js",
+  "scripts": {
+    "test": "let a=3; console.log(\"toilet\");"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rekt-Dev/My-JS-Projects.git"
+  },
+  "author": "rektDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rekt-Dev/My-JS-Projects/issues"
+  },
+  "homepage": "https://github.com/Rekt-Dev/My-JS-Projects#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
