@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///D:/My%20JS%20Projects/infinite%20scroll/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title> Infinite Scroller </title>
+
+</head>
+
+
+<body style="
+    width: 600px;
+    height: 3400px;
+">
+
+<h1> Unsplash - Infinite Scroller</h1>
+
+
+<script>
+
+  
+
+    const count = 10;
+    const apiKey= `JxHL96518YXp_e1F1AuuK1CB_3zUzTA85Dga8LPaJ9Q`;
+    const apiUrl= `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+
+
+asyng function getPhotos(){
+
+    try{
+            const response = await fetch (apiUrl);
+            const data = await response.json();
+            console.log(data);
+
+    }  catch (error) {
+
+         
+    }
+
+}
+
+getPhotos();
+</script>
+
+<div class="loader" id="loader" hidden="">
+
+<img src="./Infinite Scroller_files/spinner.svg" alt="My Happy SVG">
+
+</div>
+
+
+<div class="image-container" id="image-container">
+    <img src="./Infinite Scroller_files/photo-1635350536666-9af1879c2161">
+
+    <img src="./Infinite Scroller_files/photo-1635350536666-9af1879c2161">
+
+        <img src="./Infinite Scroller_files/photo-1635350536666-9af1879c2161">
+
+            <img src="./Infinite Scroller_files/photo-1635350536666-9af1879c2161">
+
+</div>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html{
+
+    box-sizing: border-box;
+}
+
+body {
+    margin:50;
+    font-family: Lobster, sans-serif;
+    background:white; 
+}
+
+h1 
+{
+text-align:center;
+margin-top:30px;
+margin-bottom:15px;
+font-size:45px
+letter-spacing:6px;
+}
+
+
+.loader{
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(255,255,255,0)
+}
+
+
+.loader img {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container{
+    margin : 10px 30%;
+}
+
+.image-container img {
+    width: 100%
+        margin-top: 5px; 
+}
+
+</style>
+
+
+
+<iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;" src="./Infinite Scroller_files/saved_resource.html"></iframe></body></html>
