@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ 
+ 
+
+function draw() {
+  background(220);
+}</script>
+</head>
+<body>
+
+<script>
+
+//let p5=require('p5')
+const div1 = document.createElement('div');
+console.log(div1);
+const div2 = document.createElement('div');
+const div3 = document.createElement('div');
+const div4 = document.createElement('div');
+const p1 = document.createElement('p');
+const p2 = document.createElement('p');
+let date= new Date
+p1.textContent=
+div1.textContent='this is an inner html test thru the div1 varialble';
+p2.textContent='this is another test on the p2 variable'
+div3.textContent='this is an inner text for div3 thru a varialble';
+div4.textContent=date;
+
+
+div1.append(div2, div3, div4,p1,p2);
+document.body.append(div1);
+
+
+let n;
+function setup() {
+  createCanvas(100, 100);
+  n = random(100);
+}
+
+
+const video=createCapture(VIDEO);
+console.log(video)
+video.size(320,240)
+
+/*
+console.log("these r al console logs")
+console.log(div1)
+console.log(div2)
+console.log(div3)
+console.log(div4)
+console.log(p1)
+console.log(p2)
+*/
+</script>
+</body>
+</html>
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,3 +126,132 @@ letter-spacing:6px;
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title> Infinite Scroller </title>
+
+</head>
+
+
+<body>
+
+<h1> Unsplash - Infinite Scroller</h1>
+
+
+<script>
+
+  const imageContainer = document.getElementById(`image-Container`);
+  const loader = document.getElementById(`loader`);
+  let photosArray = ['q ',1,32, {id: 'joseph'}]; 
+
+    const count = 10;
+    const apiKey= `JxHL96518YXp_e1F1AuuK1CB_3zUzTA85Dga8LPaJ9Q`;
+    const apiUrl= `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+console.log(apiUrl)
+            console.log(`This is the photos array ${photosArray}`);
+console.log(`this is the photos array index 3 array ${photosArray[3]}`)
+
+
+
+
+async function getPhotos(){
+
+    try{
+            const response = await fetch (apiUrl);
+            photosArray = await response.json();
+            console.log(data);
+            console.log(`This is the photos array ${photosArray}`);
+            
+
+    }  catch (error) {
+
+         
+    }
+
+}
+
+getPhotos();
+
+</script>
+
+<div class="loader" id="loader" hidden>
+
+<img  src = "spinner.svg" alt="My Happy SVG"/>
+
+</div>
+
+
+<div class="image-container" id="image-container"    >
+    <img src = https://images.unsplash.com/photo-1635350536666-9af1879c2161?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80>
+
+    <img src = https://images.unsplash.com/photo-1635350536666-9af1879c2161?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80>
+
+        <img src = https://images.unsplash.com/photo-1635350536666-9af1879c2161?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80>
+
+            <img src = https://images.unsplash.com/photo-1635350536666-9af1879c2161?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80>
+
+</div>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html{
+
+    box-sizing: border-box;
+}
+
+body {
+    margin:50;
+    font-family: Lobster, sans-serif;
+    background:white; 
+}
+
+h1 
+{
+text-align:center;
+margin-top:30px;
+margin-bottom:15px;
+font-size:45px
+letter-spacing:6px;
+}
+
+
+.loader{
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(255,255,255,0)
+}
+
+
+.loader img {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container{
+    margin : 10px 30%;
+}
+
+.image-container img {
+    width: 100%
+        margin-top: 5px; 
+}
+
+</style>
+
+</body>
+
+>>>>>>> d902a94958fbce50103c9a0f3dcf0444327f2adc
