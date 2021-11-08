@@ -8,12 +8,20 @@ For example:
  persistence(4) === 0 // because 4 is already a one-digit number
  */
 function persistence(num) {
+
     let numberLength = num.toString().length;
     let stringedNumber = num.toString()
+    let multipliedNumber = 1
 
-    for (i = 0; i < numberLength; i++) {
+    for (i = 0; i < numberLength - 1; i++) {
 
+        multipliedNumber = stringedNumber[0] * stringedNumber[i + 1]
+
+
+        console.log(`this is the 1st no. multiplied by its ${i} neighbour  ${multipliedNumber}`)
+        console.log(`this is the i counter  ${i}`)
     }
+    console.log(`this is the submitted no. ${num}`)
 }
-let result = persistence(4578)
+let result = persistence(53)
 console.log(result)
