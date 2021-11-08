@@ -12,16 +12,28 @@ function persistence(num) {
     let numberLength = num.toString().length;
     let stringedNumber = num.toString()
     let multipliedNumber = 1
+        //let length = multipliedNumber.toString().length
 
     for (i = 0; i < numberLength - 1; i++) {
-
+        //while(length>1){
         multipliedNumber = stringedNumber[0] * stringedNumber[i + 1]
+        let secondLayerMultipliedNumber = 1
+        let length = multipliedNumber.toString().length
 
 
-        console.log(`this is the 1st no. multiplied by its ${i} neighbour  ${multipliedNumber}`)
+        console.log(`this is the number length  ${length} from inside the for loop`)
+
+        //as long as multipliedNumber.toString().length >1, run this code
+
+        console.log(`this is the 1st no. multiplied by its ${i} neighbour, its the multipliedNumber variable   ${multipliedNumber}`)
         console.log(`this is the i counter  ${i}`)
+
+        console.log(`this is the irl length of num: ${length}`)
+
     }
     console.log(`this is the submitted no. ${num}`)
+    console.log(`this is the stringed number  ${stringedNumber}`)
+
 }
-let result = persistence(53)
+let result = persistence(5982)
 console.log(result)
