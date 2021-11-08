@@ -11,14 +11,16 @@ function persistence(num) {
 
     let numberLength = num.toString().length;
     let stringedNumber = num.toString()
+    let splitNum = num.split(``)
+    console.log(splitNum)
     let multipliedNumber = 1
         //let length = multipliedNumber.toString().length
 
-    for (i = 0; i < numberLength - 1; i++) {
-        //while(length>1){
+    for (i = 1; i < numberLength; i++) {
+
         multipliedNumber = stringedNumber[0] * stringedNumber[i + 1]
         let secondLayerMultipliedNumber = 1
-        let length = multipliedNumber.toString().length
+        let = multipliedNumber.toString().length
 
 
         console.log(`this is the number length  ${length} from inside the for loop`)
