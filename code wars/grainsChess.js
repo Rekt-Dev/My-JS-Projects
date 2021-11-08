@@ -13,8 +13,8 @@ function countGrains(grains) {
     }
 
 
-
+    a
 }
 
-let result = countGrains(5)
+let result = countGrains(17)
 console.log(result)

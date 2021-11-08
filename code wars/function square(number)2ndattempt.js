@@ -11,4 +11,4 @@ function square(number) {
 
 }
 
-let result = square(8)
+let result = square(12)
