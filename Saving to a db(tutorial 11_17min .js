@@ -20,6 +20,6 @@ app.post('api', (request, response) => {
         height: 17
     });
 
-
+    console.log(database)
 
 })

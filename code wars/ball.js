@@ -19,10 +19,10 @@ FUNDAMENTALS
 function maxBall(v, t) {
     let g = 9.81
     let h = v * t - 0.5 * g * t * t
-    console.log(h)
+    return h
+
 }
 
 
-let result = maxBall(12, 1.5)
-
-console.log(result)
+let result = maxBall
+console.log(result(12, 1.5))

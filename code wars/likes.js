@@ -7,8 +7,8 @@ function likes(names)
     let likeString
 
     for (i = 0; i < names.length; i++) {
-
-        if (names === '') {
+        console.log(names)
+        if (names === [] || names.length === 0 || names === [""]) {
             likeString = 'no one likes this'
         }
 
@@ -55,5 +55,5 @@ function likes(names)
 
 }
 
-var result = likes([''])
+var result = likes([])
 console.log(result)

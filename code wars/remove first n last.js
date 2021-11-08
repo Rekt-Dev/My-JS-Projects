@@ -13,11 +13,14 @@ Examples
 
 function newString(string) {
 
+    console.log(string)
+
+    console.log(string[8])
 
 
 }
 
 
 
-var result = newstring()
-console.log(result)
+var result = newString('bleh' + 'blah' + " ")
+    //console.log(result)
