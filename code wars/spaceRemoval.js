@@ -4,9 +4,12 @@
 
 function noSpace(x) {
 
-    x.replace(/ /g, '')
 
-    console.log(x)
+
+
+    let result = (x.replace(/ /g, ''));
+
+    return result
 }
 
 

@@ -48,6 +48,7 @@ function findLastChar(str, seperator) {
 
         /*If you don't know in advance how many values you'll have inside the data, it's better to just keep working with the entire data array, since transforming the data can be done with array.map(), array.forEach() etc.*/
 
+
         console.log(a)
         console.log(`this is outcome[ii] ${outcome[ii]}`)
         let lastChar = outcome[ii].charAt(outcome[ii].length - 1)

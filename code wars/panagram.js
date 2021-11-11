@@ -7,6 +7,7 @@ function isPangram(string) {
 
     let strLength = string.length
     console.log(strLength)
+
     let aCounter = 0
     let bCounter = 0
     let cCounter = 0
@@ -34,9 +35,9 @@ function isPangram(string) {
     let yCounter = 0
     let zCounter = 0
 
-    for (i = 0; i < strLength; i++) {
-        console.log(`this is the counter of the letter a: ${aCounter}`)
-        console.log(`this is the counter of the letter a: ${bCounter}`)
+    for (i = 1; i = strLength; i++) {
+        console.log(i)
+        console.log(strLength)
         if (string[i] === 'a' || string[i] === "A") {
 
             aCounter++
@@ -186,6 +187,7 @@ function isPangram(string) {
                                                                                                         if (yCounter >= 1) {
                                                                                                             if (zCounter >= 1) {
                                                                                                                 return true;
+                                                                                                                console.log("yes its true")
                                                                                                             }
 
                                                                                                         }
@@ -226,4 +228,4 @@ function isPangram(string) {
 
 }
 
-isPangram('abcdef')
+isPangram('abcdefghijklmnopqrstuvwxyz')
