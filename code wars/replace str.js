@@ -54,8 +54,8 @@ function sup(str){
 let words = 'this is filthy'
 
 
-    let words = str.split(' ');
-console.log(words)
+     words = str.split(' ');
+console.log(`this is the str split of the input ${words}`)
 
 
 
