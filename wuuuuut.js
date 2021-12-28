@@ -1,8 +1,8 @@
 let myMap = new Map();
-myMap.set('username', 'fegget');
+myMap.set('username', 'dude');
 myMap.set('city', 'geniusCoderville');
 myMap.set('age ', '45.5');
-myMap.set("poison", 'ganja');
+myMap.set("hobbies", 'basketball');
 
 function consolism() {
 
@@ -48,8 +48,8 @@ let tags = new Set();
 tags.add('tag1', 'joseph');
 tags.add('tag2');
 tags.add('tag3');
-tags.add('tagHitler');
-tags.add('w8Wut', 'heimleich');
+tags.add('taggest');
+tags.add('w8Wut', 'testing123');
 
 console.log(tags)
 
