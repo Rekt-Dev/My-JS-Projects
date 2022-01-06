@@ -1,9 +1,13 @@
-const http = require('http');
-const server = http.createServer((req, res) => {
+import express from "express"
+const app = express()
 
-    res.write(`sup ma bishes ? yaaahie ? this is ${http} `)
-
+app.get("/", function(req,res){
+            res.send(`<h1>Sup world ? </h1>`)
 })
 
 
-server.listen('6969');
+
+
+app.listen(3636,function(){
+        console.log(`Server started sire on port 3636`)
+})

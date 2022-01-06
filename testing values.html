@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+First Name: <input type="text" id="myText" >
+
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<button id="button"> Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    var button = document.getElementById("button")
+    button.onclick=myFunction()
+
+function myFunction() {
+    console.log("button pressed sire.")
+  var x = document.getElementById("myText").value;
+  console.log(x)
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

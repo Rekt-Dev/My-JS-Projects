@@ -14,7 +14,7 @@ class Myserver extends httpServer {
 
         console.log()
 
-        response.end(`sup bro, server is on, ${httpServer} figi the fahkin cat `)
+        response.end(`sup bro, server is on, ${httpServer}  `)
     }
 }
 

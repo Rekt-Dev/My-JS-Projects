@@ -1,13 +1,16 @@
-const http = require('http');
-const fs = require('fs');
+import { createServer } from 'http';
+import { readFileSync } from 'fs';
 
-const data = require()
-const server = http.createServer((req, res) => {
+//const data = require()
+const server = createServer((req, res) => {
 
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    html = fs.readFileSync('./index.html');
-    res.end(html);
+    let html = readFileSync('./index.html');
+    res.end(html) ;
+
+
+ 
 });
 
 

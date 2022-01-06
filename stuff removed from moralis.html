@@ -1,0 +1,19 @@
+<div class="absolute-div">
+            <div class= "carousel-caption">
+
+<h2> Inflation is transitory  </h2>
+
+
+
+window
+.fetch("https://data.messari.io/api/v1/assets/btc/metrics/market-data")
+.then(res => res.json())
+.then(messariRes => messariRes.data)
+.then(
+payload =>
+(document.getElementById("metrics").innerHTML = `Bitcoin BTC's price. ` + payload.market_data.price_usd.toLocaleString())
+);
+
+
+
+4adca401-310b-40be-8f7a-d4937ddc0627   messari api key 
