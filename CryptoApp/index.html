@@ -45,7 +45,7 @@ const lastTenFear =fetch ("https://api.alternative.me/fng/?limit=0")
 
 
 const alternativeMe = fetch ('https://api.alternative.me/fng/?limit=0')
-console.log(` lel bro stfu ffs + ${alternativeMe}`)
+console.log(`  ${alternativeMe}`)
 window
 .fetch ("https://api.alternative.me/fng/?limit=10")
 .then (res=> res.json())
@@ -162,7 +162,7 @@ var req = http.request(options, function (res) {
 
     res.on("end", function () {
         var body = Buffer.concat(chunks);
-        console.log("MOTHERFUCKER "+body.toString());
+        console.log(body.toString());
     });
 
     console.log(body)
