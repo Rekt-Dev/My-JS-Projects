@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,69 +62,3 @@ update.innerHTML=output;
         }
 
  </style>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title> looping thru js obj </title>
-<body>
-<ul id = "social" </ul>
-
-<script>
-
-let data = {
-
-    name : "John Doe",
-    title : "JS noob",
-    courses: {
-
-        php:"http://cnn.com",
-        js:"http://ttt.com",
-    
-        csharp:"http://abc.com"
-        }
-
-    };
-
-    let output = ""
-    for (key in data.courses){
-
-output +='<li>'+
-'<a href="' +data.courses[key] + '">' + key + '<a>' + '</li>';
-console.log(output)
-    } 
-
-    let update = document.getElementById(`social`);
-    console.log(update)
-
-update.innerHTML=output;
-
-
-
-
-
-
-
-
-
-
-
-
- </script>
-
- <style> 
-
-        ul
-        { color:yellow
-
-        } 
-
-        href {
-
-            color:yellow
-
-        }
-
- </style>
->>>>>>> d902a94958fbce50103c9a0f3dcf0444327f2adc
