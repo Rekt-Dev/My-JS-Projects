@@ -1,0 +1,38 @@
+
+D:\My JS Projects\My-JS-Projects>d:
+
+D:\My JS Projects\My-JS-Projects>cd "\My JS Projects\My-JS-Projects\Moralis"
+
+D:\My JS Projects\My-JS-Projects\Moralis>git add .
+
+D:\My JS Projects\My-JS-Projects\Moralis>git commit -m "this was commited through my autoScript"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\My JS Projects\My-JS-Projects\Moralis>git push
+To https://github.com/Rekt-Dev/moralis.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Rekt-Dev/moralis.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\My JS Projects\My-JS-Projects\Moralis>cd "\My JS Projects\My-JS-Projects\code wars"
+
+D:\My JS Projects\My-JS-Projects\code wars>git add .
+
+D:\My JS Projects\My-JS-Projects\code wars>git commit -m "this was commited through my autoScript"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\My JS Projects\My-JS-Projects\code wars>git push
+Everything up-to-date
+
+D:\My JS Projects\My-JS-Projects\code wars>cd "\My JS Projects\My-JS-Projects\react projects"

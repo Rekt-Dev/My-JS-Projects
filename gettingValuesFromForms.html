@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+
+
+    
+<div id = "balances" class="col-md-6 continer">
+    <h2 color = "red"> Send crypto </h2>
+    <form>
+        <div class="mb-3">
+          <input placeholder="amount to send"type="number" class="form-control" id="amountToSend" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <input placeholder="address to send to"type="any" class="form-control" id="rcvrAddress">
+        </div>
+        </div>
+        <button id = "sendFunds"type="submit" class="btn btn-primary">
+            Send the Monies</button>
+      </form>
+    </div>
+    
+    
+    <div>
+      <br>
+    <br>
+    </div>
+    
+	<script>
+        let sendButton = document.getElementById("sendFunds")
+
+                sendButton.onclick=getInputValue()
+
+                    function getInputValue(){
+                        // Selecting the input element and get its value 
+                        console.log("send funds has been pressed")
+                        let inputVal = document.getElementById("amountToSend").value;
+                        let rcvrAddress= document.getElementById("rcvrAddress").value;
+                        console.log(inputVal)
+                        console.log(rcvrAddress)
+
+                    }
+</script>
+
+
+
+  </body>
+</html>
